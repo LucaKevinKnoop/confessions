@@ -9,14 +9,19 @@ closeMenu.addEventListener('click',close);
 // close menu when you click on a menu item
 menu_items.forEach(item => {
     item.addEventListener('click',function(){
-        close();
+        show();
     })
 })
 
+var toggleStatus = 1;
+
 function show(){
+  if (toggleStatus == 1) {
     mainMenu.style.display = 'flex';
     mainMenu.style.top = '0';
-}
-function close(){
+    toggleStatus = 0;
+  } else if (toggleStatus == 0) {
     mainMenu.style.top = '-100%';
+    toggleStatus = 1;
+  }
 }
