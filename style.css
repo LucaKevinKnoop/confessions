@@ -346,6 +346,10 @@ nav .logo {
     display: inline-block;
     padding: 12px;
   }
+  nav .mainMenu li a {
+    font-family: "Inter", sans-serif;
+    font-size: 22px;
+  }
 }
 
 
@@ -2318,6 +2322,7 @@ h2.doktor-reanimation {
     text-shadow: 0 0 0 black;
     top: 150px;
     line-height: 1.5;
+    transform: translate(0px, 0px)!important;
   }
 
   .voices-canvas {
@@ -2326,7 +2331,8 @@ h2.doktor-reanimation {
     justify-content: center;
     align-items: center;
     margin: 0 125px 0 125px;
-    top: 425px;
+    top: 500px;
+    transform: translate(0px, 0px)!important;
   }
 
   img.voices-canvas {
